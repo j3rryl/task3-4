@@ -1,0 +1,7 @@
+\\Commands
+yacc -d expr.y
+flex expr.l
+gcc -o expr expr.tab.c lex.yy.c
+
+./expr 5 + 5 
+This outputs the sum
